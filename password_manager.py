@@ -1,6 +1,7 @@
 import os.path
 import sys
 
+
 #check for file/create new file#
 
 def check_system():
@@ -56,6 +57,7 @@ def view_pass():
         print(content)
 
 
+
 PASSCODE = "1234"     # passcode to access
 
 connect = input("Please enter passcode: \n")
@@ -63,7 +65,18 @@ connect = input("Please enter passcode: \n")
 while connect != PASSCODE:
     connect = input("Please enter correct passcode: \n")
 if connect == PASSCODE:       # correct passcode opens menu
-    print("Welcome!")
+    import time
+    print("Starting up...")
+    time.sleep(1)
+    print(".")
+    time.sleep(1)
+    print(".")
+    time.sleep(1)
+    print(".")
+
+
+
+    print("Welcome to your password manager v4.3!")
     while True:
         print("1. System Check")  # Menu
         print("2. Add New Password")
